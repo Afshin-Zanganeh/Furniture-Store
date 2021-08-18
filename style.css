@@ -1,93 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 
 /* general styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Alegreya', serif;
+  font-family: "Alegreya", serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 2rem auto;
 }
 /* end of general styles */
 
 /* social icons and first navbar */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1280px;
-    margin: 2rem auto;
+.social-and-first-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icon {
-    font-size: 2.4rem;
-    color: #12367f;
-    padding: 0 2rem;
+  font-size: 2.4rem;
+  color: #12367f;
+  padding: 0 2rem;
 }
 
 .social-icon i {
-    transition: transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .social-icon i:hover {
-    transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 
 .first-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
 
-.first-nav-item{
-    font-size: 2.4rem;
-    color: #12367f;
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    position: relative;
+.first-nav-item {
+  font-size: 2.4rem;
+  color: #12367f;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .first-nav-item::after {
-    content: "";
-    width: 0;
-    height: .2rem;
-    background-color: #12367f;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all .3s;
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #12367f;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
 }
 
 .first-nav-item:hover::after {
-    width: 90%;  
+  width: 90%;
 }
 
 .first-nav-item i {
-    font-size: 2rem;
-    margin: 0 .5rem;
+  font-size: 2rem;
+  margin: 0 0.5rem;
 }
 /* end of social icons and first navbar */
+
+/* search form */
+.search {
+    padding: 3rem;
+    text-align: right;
+}
+
+.search-form {
+  border-bottom: 2px solid #12367f;
+  display: inline-block;
+}
+
+.search-input {
+    padding: .3rem .4rem;
+    border: none;
+    font-size: 2rem;
+    outline: none;
+}
+
+.search-btn {
+    padding: .3rem .4rem;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    color: #12367f;
+}
+/* end of search form */
