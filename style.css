@@ -179,3 +179,64 @@ a {
     width: 100%;
 }
 /* end of second nav bar */
+
+/* banner */
+.banner {
+    background-color: #ccc;
+    margin: 3rem;
+    height: 400px;
+    position: relative;
+}
+
+.banner-heading {
+    font-size: 7rem;
+    color: #12367f;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-btn {
+    background-color: #12367f;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: .4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 60%;
+    width: 20rem;
+    height: 5rem;
+    overflow: hidden;
+    border: .2rem solid#fff;
+    background: linear-gradient(to top, #082358, #12367f, #082358);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.banner-btn-text-one {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+
+.banner-btn-text-two {
+    position: absolute;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+}
+
+.banner-btn:hover .banner-btn-text-one {
+    top: -50%;
+}
+
+.banner-btn:hover .banner-btn-text-two {
+    top: 50%;
+}
+/* end of banner */
