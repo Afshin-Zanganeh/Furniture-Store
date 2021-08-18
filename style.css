@@ -23,3 +23,71 @@ a {
     text-decoration: none;
 }
 /* end of general styles */
+
+/* social icons and first navbar */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1280px;
+    margin: 2rem auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    font-size: 2.4rem;
+    color: #12367f;
+    padding: 0 2rem;
+}
+
+.social-icon i {
+    transition: transform 0.2s;
+}
+
+.social-icon i:hover {
+    transform: rotateZ(360deg);
+}
+
+.first-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-nav-item{
+    font-size: 2.4rem;
+    color: #12367f;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.first-nav-item::after {
+    content: "";
+    width: 0;
+    height: .2rem;
+    background-color: #12367f;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s;
+}
+
+.first-nav-item:hover::after {
+    width: 90%;  
+}
+
+.first-nav-item i {
+    font-size: 2rem;
+    margin: 0 .5rem;
+}
+/* end of social icons and first navbar */
