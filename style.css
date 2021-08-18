@@ -25,7 +25,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 2rem auto;
 }
 /* end of general styles */
@@ -66,7 +66,7 @@ a {
 }
 
 .first-nav-item {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #12367f;
   padding: 0 2rem;
   display: flex;
@@ -129,7 +129,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin: 1rem 3rem;
     border-bottom: 2px solid #12367f;
     border-top: 2px solid #12367f;
