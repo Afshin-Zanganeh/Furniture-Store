@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+/* general styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+}
