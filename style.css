@@ -120,5 +120,62 @@ a {
     border: none;
     background-color: transparent;
     color: #12367f;
+    cursor: pointer;
 }
 /* end of search form */
+
+/* second nav bar */
+.second-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.4rem;
+    margin: 1rem 3rem;
+    border-bottom: 2px solid #12367f;
+    border-top: 2px solid #12367f;
+}
+
+.second-nav-item {
+    color: #12367f;
+    padding: 1.2rem;
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    transition: all .5s;
+}
+
+.second-nav-item:hover {
+    background-color: #12367f;
+    color: #fff;
+}
+
+.second-nav-item::after {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    transition: all 0.3s .3s;
+}
+
+.second-nav-item:hover::after {
+    width: 100%;
+}
+
+.second-nav-item::before {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    transition: all 0.3s .3s;
+}
+
+.second-nav-item:hover::before {
+    width: 100%;
+}
+/* end of second nav bar */
