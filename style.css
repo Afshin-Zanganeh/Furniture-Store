@@ -14,3 +14,12 @@ html {
 body {
     font-family: 'Alegreya', serif;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* end of general styles */
